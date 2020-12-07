@@ -1,0 +1,16 @@
+<div class="containar">
+    
+    <h3><center>EventList</center></h3>
+    <div class="col-md-12 col-lg-12">
+        <div class="row">
+            {{# each eventLists}}
+                <div class="col-md-4 col-lg-4">
+                    <h2><strong><a href="{{eventsUrl slug}}">Event:{{name}}</a></strong></h2>
+                    <h5><strong></strong><a href="">StartTime:{{startTime}}</a></strong></h5>
+                    <h5><strong></strong><a href="">EndTime:{{endTime}}</a></strong></h5>
+                
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
