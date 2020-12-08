@@ -1,16 +1,19 @@
-<div class="containar">
+<div class="container">
+ 
     
     <h3><center>EventList</center></h3>
-    <div class="col-md-12 col-lg-12">
-        <div class="row">
+    <div class="list-group">
             {{# each eventLists}}
-                <div class="col-md-4 col-lg-4">
-                    <h2><strong><a href="{{eventsUrl slug}}">Event:{{name}}</a></strong></h2>
-                    <h5><strong></strong><a href="">StartTime:{{startTime}}</a></strong></h5>
-                    <h5><strong></strong><a href="">EndTime:{{endTime}}</a></strong></h5>
-                
-                </div>
+               
+                <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading"><strong>Event:{{name}}</strong> </h4>
+    <p class="list-group-item-text"><strong> Start time:</strong> {{startTime}}</p>
+    <p class="list-group-item-text"><strong> End Time:</strong>  {{endTime}}</p>
+    <p class="list-group-item-text"><strong> Location: </strong> {{location}}</p>
+    <p class="list-group-item-text"><strong> Publiched: </strong> {{published}}</p>
+</a>
+               
             {{/each}}
-        </div>
+        
     </div>
 </div>
